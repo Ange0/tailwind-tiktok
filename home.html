@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>TikTok header</title>
+    <title>TikTok - Make Your Day</title>
+    <link data-rh="true" rel="shortcut icon" href="https://lf16-tiktok-web.ttwstatic.com/obj/tiktok-web-common-sg/mtact/static/images/logo_144c91a.png" type="image/x-icon">
     <script>
         tailwind.config = {
           theme: {
@@ -15,6 +16,7 @@
              width: {
                  '88':'22rem',
                 '120': '30rem',
+                '144': '36rem',
                 '140': '35rem',
               },
               spacing: {
@@ -43,11 +45,11 @@
                    <!-- Search -->
                     <div class="hidden md:block md:flex w-96 bg-gray-50 py-2 px-4 rounded-full">
                         <div class="flex-grow">
-                            <input type="text" class="w-full h-full bg-gray-50 text-gray-200" placeholder="Rechercher des comptes et des vidéos">
+                            <input type="text" class="w-full h-full bg-gray-50 text-gray-800 focus:outline-none" placeholder="Rechercher des comptes et des vidéos">
                         </div>
-                        <div class="flex w-10 h-8 items-center justify-center border-l  text-gray-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  class="w-5 h-5" fill="currentColor">
-                                <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
+                        <div class="flex w-10 h-8 items-center justify-center cursor-pointer border-l text-gray-400 ">
+                            <svg width="24" height="24" viewBox="0 0 48 48" fill="rgba(22, 24, 35, 0.75)" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 10C15.3726 10 10 15.3726 10 22C10 28.6274 15.3726 34 22 34C28.6274 34 34 28.6274 34 22C34 15.3726 28.6274 10 22 10ZM6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22C38 25.6974 36.7458 29.1019 34.6397 31.8113L43.3809 40.5565C43.7712 40.947 43.7712 41.5801 43.3807 41.9705L41.9665 43.3847C41.5759 43.7753 40.9426 43.7752 40.5521 43.3846L31.8113 34.6397C29.1019 36.7458 25.6974 38 22 38C13.1634 38 6 30.8366 6 22Z"></path>
                             </svg>
                         </div>
                     </div>
@@ -71,7 +73,7 @@
     <!-- Body -->
         <div class="flex h-screen">
             <!-- Nav small screen -->
-                <div class="flex flex-col divider items-center fixed space-y-4 h-full w-16 pr-2 pt-2 border-r lg:hidden ">
+                <div class="flex flex-col divider items-center overflow-y-auto fixed space-y-4 h-full w-16 pr-2 pt-2 border-r lg:hidden ">
                     <div class="flex  flex-col space-y-4 justify-center w-full">
                         <a class="flex justify-center hover:bg-gray-100 w-full p-2 rounded" href="">
                             <svg width="32" height="32" viewBox="0 0 48 48" fill="rgba(254, 44, 85, 1.0)" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +122,7 @@
                 </div>
              <!--/ Nav small screen -->
              <!-- Content -->
-             <div class="flex justify-center  bg-red-200 w-full overflow-y-auto">
+             <div class="flex justify-center w-full overflow-y-auto">
                 <div class="flex  mx-4 space-x-14 md:space-x-20 md:space-x-60 lg:space-x-96 w-full  xl:max-w-6xl">
                     <!-- Nav big screen -->
                     <div class="flex flex-col hidden py-6 px-2 lg:block w-[22rem] h-full fixed  space-y-6 overflow-y-auto">
@@ -301,16 +303,17 @@
                    </div>
                    <!--/ Nav big screen -->
                     <!-- Proliles -->
-                    <div class="flex flex-grow flex-col bg-red-400">
+                    <div class="flex flex-grow flex-col divide-y">
+                        <!-- Profile 1 -->
                         <div class="flex space-x-2 p-2 md:p-8 w-full ">
                             <!-- Image profil -->
                             <div class="shrink-0">
-                                <img class="flex-none rounded-full w-14 h-14" src="assets/images/profiles/profile-1.jpeg"  alt="">
+                                <img class="flex-none rounded-full w-8 h-8 sm:w-14 sm:h-14" src="assets/images/profiles/profile-1.jpeg"  alt="">
                             </div>
                             <!-- Image profil -->
-                            <div class="flex-grow bg-green-400">
+                            <div class="flex-grow">
                                 <!-- Infos profile -->
-                                <div class="flex justify-between bg-orange-100">
+                                <div class="flex justify-between">
                                     <div class="flex flex-col space-y-2">
                                         <div class="flex w-10 md:w-auto flex-wrap items-center space-x-2">
                                             <h3 class="bold text-gray-800 ">ykange</h4>
@@ -331,16 +334,16 @@
                                     </div>
                                 </div>
                                 <!--/ Infos profile -->
-                                <!--Options -->
-                                <div class="flex space-x-4 bg-red-300">
+                                <!--Video & Options -->
+                                <div class="flex h-96 md:h-[36rem] sm:space-x-4">
                                     <!-- Video -->
-                                     <video class="h-[30rem] rounded-md"  src="assets/videos/video-1.mp4" autoplay muted></video>
+                                     <video class="rounded-md"  src="assets/videos/video-1.mp4" autoplay muted></video>
                                     <!-- Video -->
                                      <!-- Options -->
                                     <div class="flex flex-col justify-end space-y-4 p-2">
                                         <!-- Love -->
                                         <div class="flex flex-col space-y-2 items-center">
-                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24">
                                                     <use xlink:href="#svg-heart-fill">
                                                         <symbol id="svg-heart-fill"><g clip-path="url(#clip1)"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C10.5 2.25 12 4.25 12 4.25C12 4.25 13.5 2.25 16.5 2.25C20 2.25 22.5 4.99999 22.5 8.5C22.5 12.5 19.2311 16.0657 16.25 18.75C14.4095 20.4072 13 21.5 12 21.5C11 21.5 9.55051 20.3989 7.75 18.75C4.81949 16.0662 1.5 12.5 1.5 8.5C1.5 4.99999 4 2.25 7.5 2.25Z" fill="#161823"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.40179 12.1998C3.58902 14.6966 5.7592 16.9269 7.74989 18.75C9.5504 20.3989 10.9999 21.5 11.9999 21.5C12.9999 21.5 14.4094 20.4072 16.2499 18.75C19.231 16.0657 22.4999 12.5 22.4999 8.49997C22.4999 8.41258 22.4983 8.32566 22.4952 8.23923C20.5671 13.6619 13.6787 18.5 11.75 18.5C10.3127 18.5 5.61087 15.8131 2.40179 12.1998Z" fill="black" fill-opacity="0.03"></path></g><defs><filter id="filter0_d" x="-0.9" y="1.05" width="25.8" height="24.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1.2"></feOffset><feGaussianBlur stdDeviation="1.2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter><clipPath id="clip1"><rect width="24" height="24" fill="white"></rect></clipPath></defs></symbol>
@@ -354,7 +357,7 @@
                                         <!--/ Love -->
                                         <!-- Comment -->
                                         <div class="flex flex-col space-y-2 items-center">
-                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
                                                 <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <use xlink:href="#svg-ellipsis-right-fill">
                                                         <symbol id="svg-ellipsis-right-fill"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0393 14.7137C17.75 13 18.75 11.215 18.75 9.13662C18.75 4.91897 14.8887 1.49997 10.125 1.49997C5.36129 1.49997 1.5 4.91897 1.5 9.13675C1.5 13.3545 5.48622 16.25 10.25 16.25V17.6487C10.25 18.0919 10.7095 18.3771 11.0992 18.1659C12.3166 17.5062 14.5725 16.183 16.0393 14.7137ZM5.93527 8.10679C6.61608 8.10679 7.16797 8.65471 7.16797 9.32962C7.16797 10.0059 6.61608 10.5538 5.93527 10.5538C5.2556 10.5538 4.70368 10.0059 4.70368 9.32962C4.70368 8.65471 5.2556 8.10679 5.93527 8.10679ZM11.3572 9.32962C11.3572 8.65471 10.8055 8.10679 10.125 8.10679C9.44459 8.10679 8.89289 8.65471 8.89289 9.32962C8.89292 10.0059 9.44462 10.5538 10.125 10.5538C10.8055 10.5538 11.3572 10.0059 11.3572 9.32962ZM14.3146 8.10679C14.9953 8.10679 15.5464 8.65471 15.5464 9.32962C15.5464 10.0059 14.9953 10.5538 14.3146 10.5538C13.6339 10.5538 13.082 10.0059 13.0821 9.32962C13.0821 8.65471 13.6339 8.10679 14.3146 8.10679Z"></path><path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M10.25 16.2499C10.25 16.2499 15.0278 15.8807 17.025 13.3234C15.0278 16.1364 13.0307 17.6708 11.2831 18.1822C9.53561 18.6937 10.25 16.2499 10.25 16.2499Z" fill="url(#BubbleEllipsisRightFill_paint0_linear)"></path><defs><linearGradient id="BubbleEllipsisRightFill_paint0_linear" x1="8.50426" y1="15.6957" x2="9.29499" y2="18.1805" gradientUnits="userSpaceOnUse"><stop></stop><stop offset="1" stop-opacity="0.01"></stop></linearGradient></defs></symbol>
@@ -368,7 +371,7 @@
                                         <!--/ Comment -->
                                         <!-- Share -->
                                         <div class="flex flex-col space-y-2 items-center">
-                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
                                                 <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <use xlink:href="#svg-pc-share">
                                                         <symbol id="svg-pc-share"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.9376 3.17495C10.9376 2.58272 11.6469 2.27873 12.0758 2.68715L18.6021 8.90241C19.1764 9.44937 19.1564 10.3717 18.5588 10.8931L12.0541 16.5689C11.6184 16.9491 10.9376 16.6397 10.9376 16.0614V13.4894C10.9376 13.4894 3.95344 12.2312 1.7131 16.3434C1.50423 16.7268 0.690072 16.8609 0.855563 14.948C1.54761 11.4273 2.96196 5.93084 10.9376 5.93084V3.17495Z" fill="#161823"></path><path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M15.7538 6.21161L17.0486 8.80136C17.2777 9.25947 17.1677 9.81453 16.7812 10.1506L10.9824 15.193C10.9824 15.193 10.7017 16.5964 11.5437 16.5964C12.3857 16.5964 19.1218 10.4217 19.1218 10.4217C19.1218 10.4217 19.4025 9.57964 18.5605 8.73763C17.7185 7.89563 15.7538 6.21161 15.7538 6.21161Z" fill="#161823"></path><path opacity="0.09" fill-rule="evenodd" clip-rule="evenodd" d="M10.9374 6.22983V13.5272C10.9374 13.5272 4.25359 12.5854 2.16026 15.7726C0.146021 18.8394 0.331011 12.3091 3.36331 9.05711C6.39561 5.8051 10.9374 6.22983 10.9374 6.22983Z" fill="url(#paint0_radial)"></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.1827 18.2553) rotate(-113.046) scale(8.93256 8.78076)"><stop></stop><stop offset="0.995496" stop-opacity="0.01"></stop><stop offset="1" stop-opacity="0.01"></stop></radialGradient></defs></symbol>
@@ -383,95 +386,202 @@
                                     </div>
                                    <!-- Options -->
                                 </div>
-                                <!--/ Options -->
+                                <!--Video & Options -->
                             </div>
-                       </div>
-                       <div class="flex space-x-2 p-2 md:p-8 w-full ">
-                        <!-- Image profil -->
-                        <div class="shrink-0">
-                            <img class="flex-none rounded-full w-14 h-14" src="assets/images/profiles/profile-1.jpeg"  alt="">
                         </div>
-                        <!-- Image profil -->
-                        <div class="flex-grow bg-green-400">
-                            <!-- Infos profile -->
-                            <div class="flex justify-between bg-orange-100">
-                                <div class="flex flex-col space-y-2">
-                                    <div class="flex w-10 md:w-auto flex-wrap items-center space-x-2">
-                                        <h3 class="bold text-gray-800 ">ykange</h4>
-                                        <h4 class="text-gray-800 text-xs">Kouassi Ange Yao</h4>
-                                   </div>
-                                   <span>😹</span>
-                                   <a class="flex overflow-x-auto items-center space-x-2" href="">
-                                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="tiktok-812w79-SvgIcon e1wg6xq71">
-                                            <use xlink:href="#svg-music-note">
-                                                <symbol id="svg-music-note"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.0001 10.7587C35.0001 10.1169 34.4041 9.64129 33.7784 9.78359L17.7902 13.4192C17.335 13.5227 17.0119 13.9275 17.0119 14.3943V37.9972H17.0109C17.0374 40.1644 14.8022 42.4189 11.612 43.2737C8.05093 44.2279 4.64847 43.0769 4.01236 40.7028C3.37624 38.3288 5.74735 35.6308 9.30838 34.6766C10.606 34.3289 11.8826 34.2608 13.0119 34.4294V14.3943C13.0119 12.0601 14.6271 10.0364 16.9033 9.5188L32.8914 5.88317C36.0204 5.17165 39.0001 7.54986 39.0001 10.7587V33.1191C39.084 35.3108 36.8331 37.6109 33.6032 38.4763C30.0421 39.4305 26.6397 38.2795 26.0036 35.9055C25.3675 33.5315 27.7386 30.8334 31.2996 29.8792C32.5961 29.5319 33.8715 29.4635 35.0001 29.6316V10.7587Z"></path></symbol>
-                                            </use>
-                                        </svg>
-                                        <span class="text-sm">son original - ykange</span> 
-                                    </a>
-                                </div>
-                               <div>
-                                    <button class="border border-rose-500 px-3 py-1 rounded-md text-sm text-rose-500 font-bold">S'abonner</button>
-                                </div>
+                        <!--/ Profile 1 -->
+                        <!-- Profile 2 -->
+                        <div class="flex space-x-2 p-2 md:p-8 w-full ">
+                            <!-- Image profil -->
+                            <div class="shrink-0">
+                                <img class="flex-none rounded-full w-8 h-8 sm:w-14 sm:h-14" src="assets/images/profiles/profile-2.jpeg"  alt="">
                             </div>
-                            <!--/ Infos profile -->
-                            <!--Options -->
-                            <div class="flex space-x-4 bg-red-300">
-                                <!-- Video -->
-                                 <video class="h-[30rem] rounded-md"  src="assets/videos/video-1.mp4" autoplay muted></video>
-                                <!-- Video -->
-                                 <!-- Options -->
-                                <div class="flex flex-col justify-end space-y-4 p-2">
-                                    <!-- Love -->
-                                    <div class="flex flex-col space-y-2 items-center">
-                                        <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24">
-                                                <use xlink:href="#svg-heart-fill">
-                                                    <symbol id="svg-heart-fill"><g clip-path="url(#clip1)"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C10.5 2.25 12 4.25 12 4.25C12 4.25 13.5 2.25 16.5 2.25C20 2.25 22.5 4.99999 22.5 8.5C22.5 12.5 19.2311 16.0657 16.25 18.75C14.4095 20.4072 13 21.5 12 21.5C11 21.5 9.55051 20.3989 7.75 18.75C4.81949 16.0662 1.5 12.5 1.5 8.5C1.5 4.99999 4 2.25 7.5 2.25Z" fill="#161823"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.40179 12.1998C3.58902 14.6966 5.7592 16.9269 7.74989 18.75C9.5504 20.3989 10.9999 21.5 11.9999 21.5C12.9999 21.5 14.4094 20.4072 16.2499 18.75C19.231 16.0657 22.4999 12.5 22.4999 8.49997C22.4999 8.41258 22.4983 8.32566 22.4952 8.23923C20.5671 13.6619 13.6787 18.5 11.75 18.5C10.3127 18.5 5.61087 15.8131 2.40179 12.1998Z" fill="black" fill-opacity="0.03"></path></g><defs><filter id="filter0_d" x="-0.9" y="1.05" width="25.8" height="24.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1.2"></feOffset><feGaussianBlur stdDeviation="1.2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter><clipPath id="clip1"><rect width="24" height="24" fill="white"></rect></clipPath></defs></symbol>
+                            <!-- Image profil -->
+                            <div class="flex-grow">
+                                <!-- Infos profile -->
+                                <div class="flex justify-between">
+                                    <div class="flex flex-col space-y-2">
+                                        <div class="flex w-10 md:w-auto flex-wrap items-center space-x-2">
+                                            <h3 class="bold text-gray-800 ">ordanevraa01Jorda</h4>
+                                            <h4 class="text-gray-800 text-xs">Evraa</h4>
+                                       </div>
+                                       <span class="text-gray-600">Donc tu es ziguehi quoi 🤣</span>
+                                       <a href="">#cotedivoire🇨🇮 #pourtoi </a>
+                                       <a class="flex items-center space-x-2" href="">
+                                           <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="tiktok-812w79-SvgIcon e1wg6xq71">
+                                               <use xlink:href="#svg-music-note">
+                                                   <symbol id="svg-music-note"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.0001 10.7587C35.0001 10.1169 34.4041 9.64129 33.7784 9.78359L17.7902 13.4192C17.335 13.5227 17.0119 13.9275 17.0119 14.3943V37.9972H17.0109C17.0374 40.1644 14.8022 42.4189 11.612 43.2737C8.05093 44.2279 4.64847 43.0769 4.01236 40.7028C3.37624 38.3288 5.74735 35.6308 9.30838 34.6766C10.606 34.3289 11.8826 34.2608 13.0119 34.4294V14.3943C13.0119 12.0601 14.6271 10.0364 16.9033 9.5188L32.8914 5.88317C36.0204 5.17165 39.0001 7.54986 39.0001 10.7587V33.1191C39.084 35.3108 36.8331 37.6109 33.6032 38.4763C30.0421 39.4305 26.6397 38.2795 26.0036 35.9055C25.3675 33.5315 27.7386 30.8334 31.2996 29.8792C32.5961 29.5319 33.8715 29.4635 35.0001 29.6316V10.7587Z"></path></symbol>
+                                               </use>
+                                           </svg>
+                                           <span>son original - Natedyuki</span> 
+                                       </a>
+                                    </div>
+                                   <div>
+                                        <button class="border border-rose-500 px-3 py-1 rounded-md text-sm text-rose-500 font-bold">S'abonner</button>
+                                    </div>
+                                </div>
+                                <!--/ Infos profile -->
+                                <!--Video & Options -->
+                                <div class="flex h-96 md:h-[36rem] sm:space-x-4">
+                                    <!-- Video -->
+                                     <video class="rounded-md" src="assets/videos/video-2.mp4"  muted></video>
+                                    <!-- Video -->
+                                     <!-- Options -->
+                                    <div class="flex flex-col justify-end space-y-4 p-2">
+                                        <!-- Love -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24">
+                                                    <use xlink:href="#svg-heart-fill">
+                                                        <symbol id="svg-heart-fill"><g clip-path="url(#clip1)"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C10.5 2.25 12 4.25 12 4.25C12 4.25 13.5 2.25 16.5 2.25C20 2.25 22.5 4.99999 22.5 8.5C22.5 12.5 19.2311 16.0657 16.25 18.75C14.4095 20.4072 13 21.5 12 21.5C11 21.5 9.55051 20.3989 7.75 18.75C4.81949 16.0662 1.5 12.5 1.5 8.5C1.5 4.99999 4 2.25 7.5 2.25Z" fill="#161823"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.40179 12.1998C3.58902 14.6966 5.7592 16.9269 7.74989 18.75C9.5504 20.3989 10.9999 21.5 11.9999 21.5C12.9999 21.5 14.4094 20.4072 16.2499 18.75C19.231 16.0657 22.4999 12.5 22.4999 8.49997C22.4999 8.41258 22.4983 8.32566 22.4952 8.23923C20.5671 13.6619 13.6787 18.5 11.75 18.5C10.3127 18.5 5.61087 15.8131 2.40179 12.1998Z" fill="black" fill-opacity="0.03"></path></g><defs><filter id="filter0_d" x="-0.9" y="1.05" width="25.8" height="24.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1.2"></feOffset><feGaussianBlur stdDeviation="1.2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter><clipPath id="clip1"><rect width="24" height="24" fill="white"></rect></clipPath></defs></symbol>
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                150.2K
+                                            </div>
+                                        </div>
+                                        <!--/ Love -->
+                                        <!-- Comment -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="#svg-ellipsis-right-fill">
+                                                        <symbol id="svg-ellipsis-right-fill"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0393 14.7137C17.75 13 18.75 11.215 18.75 9.13662C18.75 4.91897 14.8887 1.49997 10.125 1.49997C5.36129 1.49997 1.5 4.91897 1.5 9.13675C1.5 13.3545 5.48622 16.25 10.25 16.25V17.6487C10.25 18.0919 10.7095 18.3771 11.0992 18.1659C12.3166 17.5062 14.5725 16.183 16.0393 14.7137ZM5.93527 8.10679C6.61608 8.10679 7.16797 8.65471 7.16797 9.32962C7.16797 10.0059 6.61608 10.5538 5.93527 10.5538C5.2556 10.5538 4.70368 10.0059 4.70368 9.32962C4.70368 8.65471 5.2556 8.10679 5.93527 8.10679ZM11.3572 9.32962C11.3572 8.65471 10.8055 8.10679 10.125 8.10679C9.44459 8.10679 8.89289 8.65471 8.89289 9.32962C8.89292 10.0059 9.44462 10.5538 10.125 10.5538C10.8055 10.5538 11.3572 10.0059 11.3572 9.32962ZM14.3146 8.10679C14.9953 8.10679 15.5464 8.65471 15.5464 9.32962C15.5464 10.0059 14.9953 10.5538 14.3146 10.5538C13.6339 10.5538 13.082 10.0059 13.0821 9.32962C13.0821 8.65471 13.6339 8.10679 14.3146 8.10679Z"></path><path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M10.25 16.2499C10.25 16.2499 15.0278 15.8807 17.025 13.3234C15.0278 16.1364 13.0307 17.6708 11.2831 18.1822C9.53561 18.6937 10.25 16.2499 10.25 16.2499Z" fill="url(#BubbleEllipsisRightFill_paint0_linear)"></path><defs><linearGradient id="BubbleEllipsisRightFill_paint0_linear" x1="8.50426" y1="15.6957" x2="9.29499" y2="18.1805" gradientUnits="userSpaceOnUse"><stop></stop><stop offset="1" stop-opacity="0.01"></stop></linearGradient></defs></symbol>
+                                                     </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                500
+                                            </div>
+                                        </div>
+                                        <!--/ Comment -->
+                                        <!-- Share -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="#svg-pc-share">
+                                                        <symbol id="svg-pc-share"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.9376 3.17495C10.9376 2.58272 11.6469 2.27873 12.0758 2.68715L18.6021 8.90241C19.1764 9.44937 19.1564 10.3717 18.5588 10.8931L12.0541 16.5689C11.6184 16.9491 10.9376 16.6397 10.9376 16.0614V13.4894C10.9376 13.4894 3.95344 12.2312 1.7131 16.3434C1.50423 16.7268 0.690072 16.8609 0.855563 14.948C1.54761 11.4273 2.96196 5.93084 10.9376 5.93084V3.17495Z" fill="#161823"></path><path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M15.7538 6.21161L17.0486 8.80136C17.2777 9.25947 17.1677 9.81453 16.7812 10.1506L10.9824 15.193C10.9824 15.193 10.7017 16.5964 11.5437 16.5964C12.3857 16.5964 19.1218 10.4217 19.1218 10.4217C19.1218 10.4217 19.4025 9.57964 18.5605 8.73763C17.7185 7.89563 15.7538 6.21161 15.7538 6.21161Z" fill="#161823"></path><path opacity="0.09" fill-rule="evenodd" clip-rule="evenodd" d="M10.9374 6.22983V13.5272C10.9374 13.5272 4.25359 12.5854 2.16026 15.7726C0.146021 18.8394 0.331011 12.3091 3.36331 9.05711C6.39561 5.8051 10.9374 6.22983 10.9374 6.22983Z" fill="url(#paint0_radial)"></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.1827 18.2553) rotate(-113.046) scale(8.93256 8.78076)"><stop></stop><stop offset="0.995496" stop-opacity="0.01"></stop><stop offset="1" stop-opacity="0.01"></stop></radialGradient></defs></symbol>
+                                                     </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                300
+                                            </div>
+                                        </div>
+                                        <!--/ Share -->
+                                    </div>
+                                   <!-- Options -->
+                                </div>
+                                <!--Video & Options -->
+                            </div>
+                        </div>
+                        <!--/ Profile 2 -->
+                        <!-- Profile 3 -->
+                        <div class="flex space-x-2 p-2 md:p-8 w-full ">
+                            <!-- Image profil -->
+                            <div class="shrink-0">
+                                <img class="flex-none rounded-full w-8 h-8 sm:w-14 sm:h-14" src="assets/images/profiles/profile-3.jpeg"  alt="">
+                            </div>
+                            <!-- Image profil -->
+                            <div class="flex-grow">
+                                <!-- Infos profile -->
+                                <div class="flex justify-between">
+                                    <div class="flex flex-col space-y-2">
+                                        <div class="flex w-10 md:w-auto flex-wrap items-center space-x-2">
+                                            <h3 class="bold text-gray-800 ">kevinchambalaofficiel</h4>
+                                            <h4 class="text-gray-800 text-xs">EMPTATION_WILD ORLANE KEVIN🖤</h4>
+                                       </div>
+                                       <div>
+                                        <span class="text-gray-600">Répondre à</span>
+                                            <a href="">@irinacristal1</a>
+                                            <span class="text-gray-600"> Tou connais pas encore le beat</span>
+                                        </div>
+                                        <a class="flex items-center space-x-2" href="">
+                                            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" class="tiktok-812w79-SvgIcon e1wg6xq71">
+                                                <use xlink:href="#svg-music-note">
+                                                    <symbol id="svg-music-note"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.0001 10.7587C35.0001 10.1169 34.4041 9.64129 33.7784 9.78359L17.7902 13.4192C17.335 13.5227 17.0119 13.9275 17.0119 14.3943V37.9972H17.0109C17.0374 40.1644 14.8022 42.4189 11.612 43.2737C8.05093 44.2279 4.64847 43.0769 4.01236 40.7028C3.37624 38.3288 5.74735 35.6308 9.30838 34.6766C10.606 34.3289 11.8826 34.2608 13.0119 34.4294V14.3943C13.0119 12.0601 14.6271 10.0364 16.9033 9.5188L32.8914 5.88317C36.0204 5.17165 39.0001 7.54986 39.0001 10.7587V33.1191C39.084 35.3108 36.8331 37.6109 33.6032 38.4763C30.0421 39.4305 26.6397 38.2795 26.0036 35.9055C25.3675 33.5315 27.7386 30.8334 31.2996 29.8792C32.5961 29.5319 33.8715 29.4635 35.0001 29.6316V10.7587Z"></path></symbol>
                                                 </use>
                                             </svg>
-                                        </div>
-                                        <div class="text-xs font-bold text-gray-600">
-                                            100.2K
-                                        </div>
+                                            <span>son original - Natedyuki</span> 
+                                        </a>
                                     </div>
-                                    <!--/ Love -->
-                                    <!-- Comment -->
-                                    <div class="flex flex-col space-y-2 items-center">
-                                        <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
-                                            <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <use xlink:href="#svg-ellipsis-right-fill">
-                                                    <symbol id="svg-ellipsis-right-fill"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0393 14.7137C17.75 13 18.75 11.215 18.75 9.13662C18.75 4.91897 14.8887 1.49997 10.125 1.49997C5.36129 1.49997 1.5 4.91897 1.5 9.13675C1.5 13.3545 5.48622 16.25 10.25 16.25V17.6487C10.25 18.0919 10.7095 18.3771 11.0992 18.1659C12.3166 17.5062 14.5725 16.183 16.0393 14.7137ZM5.93527 8.10679C6.61608 8.10679 7.16797 8.65471 7.16797 9.32962C7.16797 10.0059 6.61608 10.5538 5.93527 10.5538C5.2556 10.5538 4.70368 10.0059 4.70368 9.32962C4.70368 8.65471 5.2556 8.10679 5.93527 8.10679ZM11.3572 9.32962C11.3572 8.65471 10.8055 8.10679 10.125 8.10679C9.44459 8.10679 8.89289 8.65471 8.89289 9.32962C8.89292 10.0059 9.44462 10.5538 10.125 10.5538C10.8055 10.5538 11.3572 10.0059 11.3572 9.32962ZM14.3146 8.10679C14.9953 8.10679 15.5464 8.65471 15.5464 9.32962C15.5464 10.0059 14.9953 10.5538 14.3146 10.5538C13.6339 10.5538 13.082 10.0059 13.0821 9.32962C13.0821 8.65471 13.6339 8.10679 14.3146 8.10679Z"></path><path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M10.25 16.2499C10.25 16.2499 15.0278 15.8807 17.025 13.3234C15.0278 16.1364 13.0307 17.6708 11.2831 18.1822C9.53561 18.6937 10.25 16.2499 10.25 16.2499Z" fill="url(#BubbleEllipsisRightFill_paint0_linear)"></path><defs><linearGradient id="BubbleEllipsisRightFill_paint0_linear" x1="8.50426" y1="15.6957" x2="9.29499" y2="18.1805" gradientUnits="userSpaceOnUse"><stop></stop><stop offset="1" stop-opacity="0.01"></stop></linearGradient></defs></symbol>
-                                                 </use>
-                                            </svg>
-                                        </div>
-                                        <div class="text-xs font-bold text-gray-600">
-                                            400
-                                        </div>
+                                   <div>
+                                        <button class="border border-rose-500 px-3 py-1 rounded-md text-sm text-rose-500 font-bold">S'abonner</button>
                                     </div>
-                                    <!--/ Comment -->
-                                    <!-- Share -->
-                                    <div class="flex flex-col space-y-2 items-center">
-                                        <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-12 w-12">
-                                            <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <use xlink:href="#svg-pc-share">
-                                                    <symbol id="svg-pc-share"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.9376 3.17495C10.9376 2.58272 11.6469 2.27873 12.0758 2.68715L18.6021 8.90241C19.1764 9.44937 19.1564 10.3717 18.5588 10.8931L12.0541 16.5689C11.6184 16.9491 10.9376 16.6397 10.9376 16.0614V13.4894C10.9376 13.4894 3.95344 12.2312 1.7131 16.3434C1.50423 16.7268 0.690072 16.8609 0.855563 14.948C1.54761 11.4273 2.96196 5.93084 10.9376 5.93084V3.17495Z" fill="#161823"></path><path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M15.7538 6.21161L17.0486 8.80136C17.2777 9.25947 17.1677 9.81453 16.7812 10.1506L10.9824 15.193C10.9824 15.193 10.7017 16.5964 11.5437 16.5964C12.3857 16.5964 19.1218 10.4217 19.1218 10.4217C19.1218 10.4217 19.4025 9.57964 18.5605 8.73763C17.7185 7.89563 15.7538 6.21161 15.7538 6.21161Z" fill="#161823"></path><path opacity="0.09" fill-rule="evenodd" clip-rule="evenodd" d="M10.9374 6.22983V13.5272C10.9374 13.5272 4.25359 12.5854 2.16026 15.7726C0.146021 18.8394 0.331011 12.3091 3.36331 9.05711C6.39561 5.8051 10.9374 6.22983 10.9374 6.22983Z" fill="url(#paint0_radial)"></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.1827 18.2553) rotate(-113.046) scale(8.93256 8.78076)"><stop></stop><stop offset="0.995496" stop-opacity="0.01"></stop><stop offset="1" stop-opacity="0.01"></stop></radialGradient></defs></symbol>
-                                                 </use>
-                                            </svg>
-                                        </div>
-                                        <div class="text-xs font-bold text-gray-600">
-                                            100
-                                        </div>
-                                    </div>
-                                    <!--/ Share -->
                                 </div>
-                               <!-- Options -->
+                                <!--/ Infos profile -->
+                                <!--Video & Options -->
+                                <div class="flex h-96 md:h-[36rem] sm:space-x-4">
+                                    <!-- Video -->
+                                     <video class="rounded-md" src="assets/videos/video-3.mp4"  muted></video>
+                                    <!-- Video -->
+                                     <!-- Options -->
+                                    <div class="flex flex-col justify-end space-y-4 p-2">
+                                        <!-- Love -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24">
+                                                    <use xlink:href="#svg-heart-fill">
+                                                        <symbol id="svg-heart-fill"><g clip-path="url(#clip1)"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.25C10.5 2.25 12 4.25 12 4.25C12 4.25 13.5 2.25 16.5 2.25C20 2.25 22.5 4.99999 22.5 8.5C22.5 12.5 19.2311 16.0657 16.25 18.75C14.4095 20.4072 13 21.5 12 21.5C11 21.5 9.55051 20.3989 7.75 18.75C4.81949 16.0662 1.5 12.5 1.5 8.5C1.5 4.99999 4 2.25 7.5 2.25Z" fill="#161823"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.40179 12.1998C3.58902 14.6966 5.7592 16.9269 7.74989 18.75C9.5504 20.3989 10.9999 21.5 11.9999 21.5C12.9999 21.5 14.4094 20.4072 16.2499 18.75C19.231 16.0657 22.4999 12.5 22.4999 8.49997C22.4999 8.41258 22.4983 8.32566 22.4952 8.23923C20.5671 13.6619 13.6787 18.5 11.75 18.5C10.3127 18.5 5.61087 15.8131 2.40179 12.1998Z" fill="black" fill-opacity="0.03"></path></g><defs><filter id="filter0_d" x="-0.9" y="1.05" width="25.8" height="24.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1.2"></feOffset><feGaussianBlur stdDeviation="1.2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter><clipPath id="clip1"><rect width="24" height="24" fill="white"></rect></clipPath></defs></symbol>
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                95.5K
+                                            </div>
+                                        </div>
+                                        <!--/ Love -->
+                                        <!-- Comment -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="#svg-ellipsis-right-fill">
+                                                        <symbol id="svg-ellipsis-right-fill"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0393 14.7137C17.75 13 18.75 11.215 18.75 9.13662C18.75 4.91897 14.8887 1.49997 10.125 1.49997C5.36129 1.49997 1.5 4.91897 1.5 9.13675C1.5 13.3545 5.48622 16.25 10.25 16.25V17.6487C10.25 18.0919 10.7095 18.3771 11.0992 18.1659C12.3166 17.5062 14.5725 16.183 16.0393 14.7137ZM5.93527 8.10679C6.61608 8.10679 7.16797 8.65471 7.16797 9.32962C7.16797 10.0059 6.61608 10.5538 5.93527 10.5538C5.2556 10.5538 4.70368 10.0059 4.70368 9.32962C4.70368 8.65471 5.2556 8.10679 5.93527 8.10679ZM11.3572 9.32962C11.3572 8.65471 10.8055 8.10679 10.125 8.10679C9.44459 8.10679 8.89289 8.65471 8.89289 9.32962C8.89292 10.0059 9.44462 10.5538 10.125 10.5538C10.8055 10.5538 11.3572 10.0059 11.3572 9.32962ZM14.3146 8.10679C14.9953 8.10679 15.5464 8.65471 15.5464 9.32962C15.5464 10.0059 14.9953 10.5538 14.3146 10.5538C13.6339 10.5538 13.082 10.0059 13.0821 9.32962C13.0821 8.65471 13.6339 8.10679 14.3146 8.10679Z"></path><path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M10.25 16.2499C10.25 16.2499 15.0278 15.8807 17.025 13.3234C15.0278 16.1364 13.0307 17.6708 11.2831 18.1822C9.53561 18.6937 10.25 16.2499 10.25 16.2499Z" fill="url(#BubbleEllipsisRightFill_paint0_linear)"></path><defs><linearGradient id="BubbleEllipsisRightFill_paint0_linear" x1="8.50426" y1="15.6957" x2="9.29499" y2="18.1805" gradientUnits="userSpaceOnUse"><stop></stop><stop offset="1" stop-opacity="0.01"></stop></linearGradient></defs></symbol>
+                                                     </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                670
+                                            </div>
+                                        </div>
+                                        <!--/ Comment -->
+                                        <!-- Share -->
+                                        <div class="flex flex-col space-y-2 items-center">
+                                            <div class="flex flex-none items-center justify-center bg-gray-100 hover:bg-gray-200 transition cursor-pointer rounded-full h-8 w-8 sm:h-12 sm:w-12">
+                                                <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="#svg-pc-share">
+                                                        <symbol id="svg-pc-share"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.9376 3.17495C10.9376 2.58272 11.6469 2.27873 12.0758 2.68715L18.6021 8.90241C19.1764 9.44937 19.1564 10.3717 18.5588 10.8931L12.0541 16.5689C11.6184 16.9491 10.9376 16.6397 10.9376 16.0614V13.4894C10.9376 13.4894 3.95344 12.2312 1.7131 16.3434C1.50423 16.7268 0.690072 16.8609 0.855563 14.948C1.54761 11.4273 2.96196 5.93084 10.9376 5.93084V3.17495Z" fill="#161823"></path><path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M15.7538 6.21161L17.0486 8.80136C17.2777 9.25947 17.1677 9.81453 16.7812 10.1506L10.9824 15.193C10.9824 15.193 10.7017 16.5964 11.5437 16.5964C12.3857 16.5964 19.1218 10.4217 19.1218 10.4217C19.1218 10.4217 19.4025 9.57964 18.5605 8.73763C17.7185 7.89563 15.7538 6.21161 15.7538 6.21161Z" fill="#161823"></path><path opacity="0.09" fill-rule="evenodd" clip-rule="evenodd" d="M10.9374 6.22983V13.5272C10.9374 13.5272 4.25359 12.5854 2.16026 15.7726C0.146021 18.8394 0.331011 12.3091 3.36331 9.05711C6.39561 5.8051 10.9374 6.22983 10.9374 6.22983Z" fill="url(#paint0_radial)"></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.1827 18.2553) rotate(-113.046) scale(8.93256 8.78076)"><stop></stop><stop offset="0.995496" stop-opacity="0.01"></stop><stop offset="1" stop-opacity="0.01"></stop></radialGradient></defs></symbol>
+                                                     </use>
+                                                </svg>
+                                            </div>
+                                            <div class="text-xs font-bold text-gray-600">
+                                                250
+                                            </div>
+                                        </div>
+                                        <!--/ Share -->
+                                    </div>
+                                   <!-- Options -->
+                                </div>
+                                <!--Video & Options -->
                             </div>
-                            <!--/ Options -->
                         </div>
-                   </div>
+                        <!--/ Profile 3 -->
                     </div>
                     <!-- Proliles -->
+                    <div class="flex flex-col space-y-2 fixed bottom-4 right-10">
+                        <button class="border shadow bg-white hover:bg-gray-100 rounded-full px-2 py-1 text-sm text-gray-600 font-bold">
+                            Télécharger l'application
+                        </button>
+                        <div class="flex justify-end">
+                            <button class="flex justify-center bg-rose-500 items-center rounded-full h-8 w-8">
+                                <svg width="16" height="16" viewBox="0 0 48 48" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1086 20.3412C23.1028 19.2196 24.8972 19.2196 25.8914 20.3412L42.8955 39.5236C44.2806 41.0861 43.1324 43.5 41.004 43.5L6.99596 43.5C4.86764 43.5 3.71945 41.0861 5.10454 39.5235L22.1086 20.3412Z"></path>
+                                    <path d="M4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5L40.5 4.5C42.1569 4.5 43.5 5.84315 43.5 7.5C43.5 9.15685 42.1569 10.5 40.5 10.5L7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--/ Content -->
